@@ -1,0 +1,21 @@
+SpaceShooter
+Start
+Setting
+Quit
+Back
+Volume
+Screen Size
+Language
+Video playback speed
+Mute
+Skip
+Score
+Pause
+Reteaching
+Menu
+Continue Game
+Uninstall Game
+GameOver
+HeightScore
+Score
+Regame
