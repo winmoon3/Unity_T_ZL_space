@@ -6,6 +6,12 @@ TagManager:
   tags:
   - BGM
   - ReadText
+  - on TrggerenterEnter
+  - on Trigger Stay
+  - on Trigger Exit
+  - enemy
+  - player bullet
+  - enemy bullet
   layers:
   - Default
   - TransparentFX

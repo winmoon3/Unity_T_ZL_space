@@ -22,6 +22,7 @@ public class ReadText : MonoBehaviour
 
     WWW CHreader;
     WWW ENreader;
+
     void Awake()
     {
 
@@ -35,8 +36,9 @@ public class ReadText : MonoBehaviour
             //透過網址方式把StreamingAssets資料夾內的路徑轉檔
              CHreader = new WWW(CHPath);
             //並讀取網址內的文字訊息
+           // CHMassage = CHreader.text;
              ENreader = new WWW(ENPath);
-            //將字串文字切割 字串.Split('需要切割的符號')
+            // ENMassage = ENreader.text;
             CHTexts = CHreader.text.Split('\n');
             ENTexts = ENreader.text.Split('\n');
         }
@@ -45,14 +47,14 @@ public class ReadText : MonoBehaviour
             //讀取中文文字檔內所有的文字
             CHMassage = File.ReadAllText(CHPath);
             //讀取英文文字檔內所有的文字
-            ENMassage = File.ReadAllText(ENPath);
+            ENMassage = File.ReadAllText(ENPath); 
             //將字串文字切割 字串.Split('需要切割的符號')
-            CHTexts = CHMassage.Split('\n');
-            ENTexts = ENMassage.Split('\n');
+        CHTexts = CHMassage.Split('\n');
+        ENTexts = ENMassage.Split('\n');
         }
         //Debug.Log(CHMassage);
         //Debug.Log(ENMassage);
-
+       
 
     }
     // Start is called before the first frame update

@@ -9,51 +9,50 @@ public class SaveSettingData : MonoBehaviour
 {
     //在Awake寫入Save.txt的路徑
     string Path;
-    //[Header("Test 文字")]
-    //public Text TestText;
+   // [Header("Test 文字")]
+   // public Text TestText;
     //讀取文字檔，進行讀和寫入的功能
     FileStream file;
-    [Header("Dropdown ScreenSize, Language")]
+
+    [Header("Dropdown解析度和語言")]
     public Dropdown ScreenSize, Language;
+
     void Awake()
     {
         //文字檔案路徑，Application.persistentDataPath使用此方法可以直接將資料進行讀寫，無需再進行轉檔處理
         Path = Application.persistentDataPath + "Save.txt";
-        //Debug.Log(Path);
+     //   Debug.Log(Path);
         //檢查此路徑是否有Save.txt檔案了，如果有會回傳true，否則回傳false
-        if (File.Exists(Path))
-        {
-            //  TestText.text = "在手機已經建立過一個Save檔案";
+        if (File.Exists(Path)) {
+          //  TestText.text = "在手機已經建立過一個Save檔案";
         }
-        else
-        {
-            // TestText.text = "在手機上尚未建立Save檔案，正在建立...";
+        else {
+           // TestText.text = "在手機上尚未建立Save檔案，正在建立...";
             //在此路徑下建立一個文字檔，檔名為Save
             file = new FileStream(Path, FileMode.Create);
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+        // Start is called before the first frame update
+        void Start()
     {
-        //WriteString("Hello");
+        // WriteString("Hello");
         if (File.Exists(Path))
         {
             ReadString();
         }
     }
-    public void SaveData()
-    {
+    //按下返回的按鈕將解析度和語言的Dropdown valuse儲存
+    public void SaveData() {
         WriteString(ScreenSize.value + "@" + Language.value);
     }
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    public void WriteString(string Data)
-    {
+    public void WriteString(string Data) {
         //找到Application.persistentDataPath路徑下的Save.txt並且開啟
         file = new FileStream(Path, FileMode.Open);
         //要開始將資料撰寫到Save.txt
@@ -64,13 +63,15 @@ public class SaveSettingData : MonoBehaviour
         sw.Close();
 
     }
-    public void ReadString()
-    {
+    public void ReadString() {
         //Application.persistentDataPath路徑下的Save.txt所有文字
         //TestText.text = File.ReadAllText(Path);
+        //讀取路徑內的訊息
         string Text = File.ReadAllText(Path);
+        //將儲存資料分割
         string[] Texts = Text.Split('@');
+        //將資料帶入到Dropdown value中
         ScreenSize.value = int.Parse(Texts[0]);
-        Language.value = int.Parse(Texts[0]);
+        Language.value = int.Parse(Texts[1]);
     }
 }

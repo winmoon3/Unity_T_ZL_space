@@ -68,13 +68,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12262}
     - Class: 114
-      Script: {instanceID: 12758}
+      Script: {instanceID: 12760}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13166}
+      Script: {instanceID: 13168}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -139,13 +139,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12262}
     - Class: 114
-      Script: {instanceID: 12758}
+      Script: {instanceID: 12760}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13166}
+      Script: {instanceID: 13168}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -220,23 +220,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12262}
     - Class: 114
-      Script: {instanceID: 12758}
+      Script: {instanceID: 12744}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 12760}
     - Class: 114
-      Script: {instanceID: 13024}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13112}
+      Script: {instanceID: 13026}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13114}
     - Class: 114
-      Script: {instanceID: 13138}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13154}
+      Script: {instanceID: 13140}
     - Class: 114
-      Script: {instanceID: 13166}
+      Script: {instanceID: 13156}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 13168}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -285,17 +285,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12758}
+      Script: {instanceID: 12760}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13154}
+      Script: {instanceID: 13156}
     - Class: 114
-      Script: {instanceID: 13166}
+      Script: {instanceID: 13168}
     - Class: 114
-      Script: {instanceID: 15420}
+      Script: {instanceID: 14672}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -631,6 +631,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: b9e3f23c3ef52267b35fc894d381ff81
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReadText
+  - hash:
+      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -779,16 +785,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: b9e3f23c3ef52267b35fc894d381ff81
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ReadText
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Video.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/GamOver.unity
-  playerPath: C:/Users/Appedu/Desktop/one.apk
+  playerPath: C:/Users/Appedu/Desktop/0109.apk

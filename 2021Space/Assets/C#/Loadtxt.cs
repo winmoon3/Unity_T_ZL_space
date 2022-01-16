@@ -8,14 +8,11 @@ using UnityEngine.UI;
 
 public class Loadtxt : MonoBehaviour
 {
- 
-
+   
     [Header("讀取該文字在陣列中的代號")]
     public int TextID;
-
-   
-
-    // Start is called before the first frame update
+      
+   // Start is called before the first frame update
     void Start()
     {
         
@@ -24,17 +21,19 @@ public class Loadtxt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("ReadText").Length > 0) {
-            //讀取語言下拉選單的ID
-            if (Menu.LanguageID==0) {
-            //讀取第幾個陣列的中文文字
-            GetComponent<Text>().text = GameObject.FindGameObjectWithTag("ReadText").GetComponent<ReadText>().CHTexts[TextID];
-        }
-        if (Menu.LanguageID == 1)
+        if (GameObject.FindGameObjectsWithTag("ReadText").Length > 0)
         {
-            //讀取第幾個陣列的英文文字
-            GetComponent<Text>().text = GameObject.FindGameObjectWithTag("ReadText").GetComponent<ReadText>().ENTexts[TextID];
-        }
+            //讀取語言下拉選單的ID
+            if (Menu.LanguageID == 0)
+            {
+                //讀取第幾個陣列的中文文字
+                GetComponent<Text>().text = GameObject.FindGameObjectWithTag("ReadText").GetComponent<ReadText>().CHTexts[TextID];
+            }
+            if (Menu.LanguageID == 1)
+            {
+                //讀取第幾個陣列的英文文字
+                GetComponent<Text>().text = GameObject.FindGameObjectWithTag("ReadText").GetComponent<ReadText>().ENTexts[TextID];
+            }
         }
     }
 }

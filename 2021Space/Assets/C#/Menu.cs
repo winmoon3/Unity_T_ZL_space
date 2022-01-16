@@ -24,7 +24,8 @@ public class Menu : MonoBehaviour
     public Dropdown LanguageDropdown;
     //保存LanguageDropdown的ID數值
     static public int LanguageID;
-    [Header("擺放BGM的Prefab物件")]
+
+    [Header("擺放ReadText的Prefab物件")]
     public GameObject ReadText;
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,6 @@ public class Menu : MonoBehaviour
         }
         if (GameObject.FindGameObjectsWithTag("ReadText").Length <= 0)
         {
-            //Instantiate動態生成(要生成的物件)
             Instantiate(ReadText);
         }
     }

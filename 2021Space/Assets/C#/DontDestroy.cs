@@ -12,6 +12,9 @@ public class DontDestroy : MonoBehaviour
     }
      void Update()
     {
+        //gameObject.name抓取自己身上的物件名稱
+        //gameObject.tag抓取自己身上的物件標籤
+        //如果物件標籤為BGM才去控制聲音元件
         if (gameObject.tag == "BGM")
         {
             //如果場景名稱為Video
