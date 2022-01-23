@@ -34,8 +34,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Vector3.yp=(0,1,0) Vector3.down=(0,-1.0) Vector3.right=(1,0,0)......
-        transform.Translate(Vector3.forward * Speed);
+        if (!Staticvar.isStop)
+            //Vector3.yp=(0,1,0) Vector3.down=(0,-1.0) Vector3.right=(1,0,0)......
+            transform.Translate(Vector3.forward * Speed);
+      
     }
     void OnTriggerEnter(Collider hit)
     {
